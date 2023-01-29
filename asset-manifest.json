@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/maram-9/currency-converter-react.git/static/css/main.3cfd0307.css",
+    "main.js": "/maram-9/currency-converter-react.git/static/js/main.be0557a5.js",
+    "static/js/787.6d28efeb.chunk.js": "/maram-9/currency-converter-react.git/static/js/787.6d28efeb.chunk.js",
+    "static/media/tlo2.jpg": "/maram-9/currency-converter-react.git/static/media/tlo2.f2ed675f01a55d1cf73d.jpg",
+    "static/media/logo.svg": "/maram-9/currency-converter-react.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/maram-9/currency-converter-react.git/index.html",
+    "main.3cfd0307.css.map": "/maram-9/currency-converter-react.git/static/css/main.3cfd0307.css.map",
+    "main.be0557a5.js.map": "/maram-9/currency-converter-react.git/static/js/main.be0557a5.js.map",
+    "787.6d28efeb.chunk.js.map": "/maram-9/currency-converter-react.git/static/js/787.6d28efeb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cfd0307.css",
+    "static/js/main.be0557a5.js"
+  ]
+}
