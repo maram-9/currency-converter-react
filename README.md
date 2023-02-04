@@ -1,6 +1,7 @@
 # Currency-Converter
 Hello, it is my website. 
-My currency converter is converting the amount from polish currency PLN to another selected currency. I modificted my old website in React.js.
+My currency converter is converting the amount from polish currency PLN to another selected currency. 
+I modificted my old website in React.js.
 I hope that you can see my progress. 
 
 # Demo
