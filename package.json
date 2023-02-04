@@ -2,7 +2,7 @@
   "name": "converter-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/maram-9/currency-converter-react.git",
+  "homepage": "https://maram-9.github.io/currency-converter-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
