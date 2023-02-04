@@ -1,9 +1,16 @@
 # Currency-Converter
 Hello, it is my website. 
-My currency converter is simple but I used Markdown and OpenGRaph, Flex and JS Funktion. I modificted this website in React.js.
+My currency converter is converting the amount from polish currency PLN to another selected currency. I modificted my old website in React.js.
 I hope that you can see my progress. 
+
 # Demo
 https://github.com/maram-9/currency-converter-react.git
+
+# Technologies used in this project:
+- HTML
+- CSS
+- Java Script
+
 # Animation
 ![animation](public/Animation.gif)
 
