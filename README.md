@@ -4,7 +4,7 @@ My currency converter is converting the amount from polish currency PLN to anoth
 I hope that you can see my progress. 
 
 # Demo
-https://github.com/maram-9/currency-converter-react.git
+https://maram-9.github.io/currency-converter-react/
 
 # Technologies used in this project:
 - HTML
