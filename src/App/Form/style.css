@@ -1,5 +1,7 @@
 .form {
     padding: 40px 10px;
+    flex-basis: 550px;
+    box-sizing: border-box;
   }
 
 .form__labelText {
@@ -11,44 +13,44 @@
 }
 
 .form__field {
-border: 1px solid #ccc;
-border-radius: 5px;
-padding: 10px;
-max-width: 300px;
-width: 100%;
-border-color: teal;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+  width: 100%;
+  border-color: teal;
 }
 
 .form__fieldset {
-border-radius: 10px;
-border: 1px solid teal;
-font-weight: 600;
-width: 100%;
+  border-radius: 10px;
+  border: 1px solid teal;
+  font-weight: 600;
+  width: 100%;
 }
 
 .form__field--textArea {
-resize: vertical;
-min-height: 100px;
+  resize: vertical;
+  min-height: 100px;
 }
 
 .form__field:required {
-border-color: hsl(180, 100%, 35%);
+  border-color: hsl(180, 100%, 35%);
 }
 
 .form__legend {
-padding: 10px;
-border-radius: 5px;
-background-color: hsl(180, 100%, 40%);
-color: white
+  padding: 10px;
+  border-radius: 5px;
+  background-color: hsl(180, 100%, 40%);
+  color: white
 }
 
 .form__button {
-width: 100%;
-border: none;
-background-color: teal;
-color: white;
-padding: 1%;
-border-radius: 5px;
+  width: 100%;
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 .form__button:hover {
