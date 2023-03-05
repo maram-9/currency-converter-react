@@ -39,9 +39,8 @@
 
 .form__legend {
   padding: 10px;
-  border-radius: 5px;
-  background-color: hsl(180, 100%, 40%);
-  color: white
+  color: teal;
+  text-align: center;
 }
 
 .form__button {
