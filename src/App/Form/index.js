@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css";
+import {
+    Button, 
+    Field, 
+    Header, 
+    Info, 
+    LabelText, 
+} from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -9,60 +15,53 @@ export const Form = ({ calculateResult, result }) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        
         calculateResult(currency, amount);
     }
 
     return (
-        <form className="form" onSubmit={onSubmit}>
-            <fieldset className="form__fieldset">
-                <h1 className="form__legend">
+        <form onSubmit={onSubmit}>
+            <Header>
                 Przelicznik walut
-            </h1>
+            </Header>
             <p>
                 <label>
-                    <span className="form__labelText">
+                    <LabelText>
                         Kwota w zl*:
-                    </span>
-                    <input
-                    value={amount}
-                    onChange={({ target }) => setAmount(target.value)}
-                    placeholder="Wpisz kwote w zl"
-                    className="form__field"
-                    type="number"
-                    required
-                    step="0.01"
-                    />
+                    </LabelText>
+                    <Field
+                        value={amount}
+                        onChange={({ target }) => setAmount(target.value)}
+                        placeholder="Wpisz kwote w zl"
+                        type="number"
+                        required
+                        step="0.01" />
                 </label>
             </p>
             <p>
                 <label>
-                    <span className="form__labelText">
-                        Wybierz walutę:
-                    </span>
-                    <select 
-                        className="form__field"
+                    <LabelText>Wybierz walutę:</LabelText>
+                    <Field
+                        as="select"
                         value={currency}
                         onChange={({ target }) => setCurrency(target.value)}
                     >
                         {currencies.map((currency => (
                             <option
-                            key={currency.short}
-                            value={currency.short}
+                                key={currency.short}
+                                value={currency.short}
                             >
-                             {currency.name}   
+                                {currency.name}
                             </option>
                         )))}
-                    </select>
+                    </Field>
                 </label>
             </p>
-            </fieldset>
             <p>
-                <button className="form__button">Przelicz!</button>
+                <Button>Przelicz!</Button>
             </p>
-            <p className="form__info">
+            <Info>
                 Kursy pochodza ze stron nbp.pl z dnia 06.12.2022
-                </p>
+            </Info>
             <Result result={result} />           
         </form>
     );
