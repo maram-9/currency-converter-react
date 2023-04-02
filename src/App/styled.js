@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Content = styled.div`
     flex-basis: 700px;
     margin: 20px;
     padding: 40px;
