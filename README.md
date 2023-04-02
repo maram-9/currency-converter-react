@@ -2,9 +2,9 @@
 Hello!
 
 I made project during programming course with YouCode. 
-My currency converter created in React tha allows you to convert PLN currency to the USD, GBP, EUR, CHF. 
-That was rating on 06.12.2022. 
-I created a Clock which is live updated. 
+This application was builted with React, using JSX syntax and use live updated clock. 
+My currency converter allow you to convert PLN currency to other curriercies from around the world and is live rating by europian central bank. 
+
 
 # Demo
 https://maram-9.github.io/currency-converter-react/
@@ -12,13 +12,20 @@ https://maram-9.github.io/currency-converter-react/
 # Animation
 ![animation](public/Animation.gif)
 
+# How to get started
+Simply enter an amount you wish to convert, select a currency and click "Przelicz".
+
 # Technologies used in this project:
-- JS
+- JSX
 - HTML
+- CSS
+- BEM
 - NORMALIZE
 - ES6 + feutures
 - React
-- Styled Components
+- styled-components
+- custom Hooks
+-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
