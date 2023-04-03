@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-const DataUrl = "https://api.exchangerate.host/latest";
+const API_URL = "https://api.exchangerate.host/latest";
 
 export const useRatesData = () => {
     const [ratesData, setRatesData] = useState({
@@ -10,13 +11,9 @@ export const useRatesData = () => {
 useEffect(() => {
     const fetchRates = async () => {
         try {
-            const response = await fetch(DataUrl);
-        
-            if (!response.ok) {
-                throw new Error(response.statusText);
-            }
-
-            const { rates, date } = await response.json();
+            const {
+                data: { rates, date }, 
+             } = await axios.get(API_URL);
 
             setRatesData({
                 status: "success",
