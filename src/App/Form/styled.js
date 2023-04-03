@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+export const StyledForm = styled.form`
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  height: 300px;
+  background-color: ${({ theme }) => theme.color.white};
+  border-radius: 10px;
+ 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    height: 420px;
+  }
+`;
+
 export const LabelText = styled.span`
     width: 100%;
     max-width: 200px;
@@ -46,8 +59,12 @@ export const Info = styled.p`
 
 export const Loading = styled.p`
   color: ${({ theme }) => theme.color.teal};
+  text-align: center;
+  padding-top: 90px;
 `;
 
 export const Failure = styled.p`
   color: ${({ theme }) => theme.color.crimson};
+  text-align: center;
+  padding-top: 90px;
 `;

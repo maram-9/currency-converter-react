@@ -8,13 +8,14 @@ import {
     LabelText, 
     Loading, 
     Failure,
+    StyledForm, 
 } from "./styled";
 
-import { useRatesDate } from "./useRatesData";
+import { useRatesData } from "./useRatesData";
 
 export const Form = () => {
     const [result, setResult] = useState();
-    const ratesData = useRatesDate();
+    const ratesData = useRatesData();
 
     const calculateResult = (currency, amount) => {
         const rate = ratesData.rates[currency];
@@ -35,19 +36,19 @@ export const Form = () => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <StyledForm onSubmit={onSubmit}>
             <Header>
                 Przelicznik walut
             </Header>
-            {ratesData.state === "loading"
+            {ratesData.status === "loading"
              ? (
                 <Loading>
                     Sekundka.... <br />Trwa ładowanie walut z Europejskiego Banku Centralnego
                 </Loading>
              ) : (
-                ratesData.state === "error" ? (
+                ratesData.status === "error" ? (
                     <Failure>
-                    Hmmm... chyba cos poszlo nie tak. Sprawdz prosze czy masz polaczenie z internetem
+                        Hmmm... chyba cos poszlo nie tak. Sprawdz prosze czy masz polaczenie z internetem
                     </Failure>
                 ) : (
                     <>
@@ -95,6 +96,6 @@ export const Form = () => {
                     </>
                     )
                 )}           
-                </form>
+                </StyledForm>
             );
         };

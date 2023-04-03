@@ -7,4 +7,8 @@ export const Content = styled.div`
     background-color: ${({ theme }) => theme.color.white};
     border-radius: 20px;
     box-shadow: 0 0 30px ${({ theme }) => theme.color.black};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    height: 420px;
+  }
 `;
