@@ -9,6 +9,7 @@ export const Content = styled.div`
     box-shadow: 0 0 30px ${({ theme }) => theme.color.black};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    height: 420px;
+      width: 350px;
+      height: 600px;
   }
 `;

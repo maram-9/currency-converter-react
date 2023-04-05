@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const StyledForm = styled.form`
   margin: auto;
-  text-align: center;
+  text-align: left;
   padding: 10px;
-  height: 300px;
+  height: 400px;
   background-color: ${({ theme }) => theme.color.white};
   border-radius: 10px;
  
@@ -16,15 +16,20 @@ export const StyledForm = styled.form`
 export const LabelText = styled.span`
     width: 100%;
     max-width: 200px;
-    display: inline-block;
+    display: inline-flex;
     margin-right: 5px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    padding: 5px;
+    text-align: center;
+    }
 `;
 
 export const Field = styled.input`
     border: 1px solid ${({ theme }) => theme.color.silver};
     padding: 10px;
     width: 100%;
-    max-width: 350px;
+    max-width: 250px;
     border-radius: 5px;
 `;
 
@@ -36,6 +41,8 @@ export const Button = styled.button`
     padding: 10px;
     border-radius: 5px;
     transition: 0.3s;
+    margin: 10px;
+    padding: 10px;
 
     &:hover {
         filter: brightness(110%);
@@ -51,9 +58,10 @@ export const Header = styled.h1`
     text-align: center;
 `;
 
-export const Info = styled.p`
-    font-size: 14px;
+export const Info = styled.div`
+    font-size: small;
     text-align: center;
+    margin: auto;
     color: ${({ theme }) => theme.color.emperor};
 `;
 
