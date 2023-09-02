@@ -1,9 +1,9 @@
 # Currency-Converter
 Hello!
 
-I made project during programming course with YouCode. 
-This application was builted with React, using JSX syntax and use live updated clock. 
-My currency converter allow you to convert PLN currency to other curriercies from around the world and is live rating by europian central bank. 
+I made a project during programming course with YouCode. 
+This application was built with React, using JSX syntax and use live updated clock. 
+My currency converter allows you to convert PLN currency to other currencies from around the world and is live rating by European Central Bank. 
 
 
 # Demo
@@ -13,7 +13,7 @@ https://maram-9.github.io/currency-converter-react/
 ![animation](public/Animation.gif)
 
 # How to get started
-Simply enter an amount you wish to convert, select a currency and click "Przelicz".
+Simply enter an amount you wish to convert, select a currency and click "Convert".
 
 # Technologies used in this project:
 - JSX

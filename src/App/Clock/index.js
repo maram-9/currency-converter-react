@@ -16,7 +16,7 @@ export const Clock = () => {
 
     return (
         <Wrapper>
-            Dzisiaj jest
+            Today is
             {" "}
             {formatDate(date)}
         </Wrapper>

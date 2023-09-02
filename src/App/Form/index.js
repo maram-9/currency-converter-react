@@ -38,29 +38,29 @@ export const Form = () => {
     return (
         <StyledForm onSubmit={onSubmit}>
             <Header>
-                Przelicznik walut
+                Currency converter
             </Header>
             {ratesData.status === "loading"
              ? (
                 <Loading>
-                    Sekundka.... <br />Trwa ładowanie walut z Europejskiego Banku Centralnego
+                    Wait a second.... <br />Currencies from the European Central Bank are being loaded
                 </Loading>
              ) : (
                 ratesData.status === "error" ? (
                     <Failure>
-                        Hmmm... chyba cos poszlo nie tak. Sprawdz prosze czy masz polaczenie z internetem
+                        Hmmm... something went wrong. Please check if you have internet connection
                     </Failure>
                 ) : (
                     <>
                         <p>
                             <label>
                                 <LabelText>
-                                    Kwota w zl*:
+                                    Amount in PLN*:
                                 </LabelText>
                                 <Field
                                     value={amount}
                                     onChange={({ target }) => setAmount(target.value)}
-                                    placeholder="Wpisz kwote w zl"
+                                    placeholder="Enter the amount in PLN"
                                     type="number"
                                     required
                                     step="0.01" />
@@ -68,7 +68,7 @@ export const Form = () => {
                         </p>
                         <p>
                             <label>
-                                <LabelText>Wybierz walutę:</LabelText>
+                                <LabelText>Choose currency:</LabelText>
                                 <Field
                                     as="select"
                                     value={currency}
@@ -86,11 +86,11 @@ export const Form = () => {
                             </label>
                         </p>
                         <p>
-                            <Button>Przelicz!</Button>
+                            <Button>Convert!</Button>
                         </p>
                         <Info>
-                            Kursy walut pobierane sa z Europejskiego Banku Centralnego. <br />
-                            Aktualne na dzień:&nbsp;<strong>{ratesData.date}</strong>
+                            Exchange rates are taken from the European Central Bank. <br />
+                            Current date&nbsp;<strong>{ratesData.date}</strong>
                         </Info>
                         <Result result={result} />
                     </>
