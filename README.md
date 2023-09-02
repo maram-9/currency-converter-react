@@ -1,4 +1,4 @@
-# Currency-Converter
+# Currency converter
 Hello!
 
 I made a project during programming course with YouCode. 
